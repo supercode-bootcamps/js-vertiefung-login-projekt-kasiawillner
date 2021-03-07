@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="de-DE">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projekt Name</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="blur">
+      <img src="/assets/img/eye.png" alt="logo" />
+      <nav>
+        <ul>
+          <li id="username_log">username</li>
+          <li id="logout"><a href="logout">logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="mother">
+      <div class="child">
+        <form action="#">
+          <h2>>LOGIN</h2>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+            required
+          />
+          <input type="submit" onclick="getInfo()" />
+          <p id="nope"></p>
+        </form>
+      </div>
+    </section>
+    <main class="blur">
+      <div>
+        <img src="/assets/img/Illustration.png" alt="bild" />
+      </div>
+      <div class="block">
+        <h1>Top Secret</h1>
+        <p>You may not click the button.</p>
+        <button>>SECRET CONTENT</button>
+      </div>
+    </main>
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
